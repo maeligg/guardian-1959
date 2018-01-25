@@ -40,7 +40,7 @@ adSlots.forEach(slot => {
 // Get the data for each article and append them to the DOM
 axios
   .get(
-    "http://content.guardianapis.com/search?page-size=9&show-fields=body,thumbnail&api-key="
+    `http://content.guardianapis.com/search?page-size=9&show-fields=body,thumbnail&api-key=${process.env.API_KEY}`
   )
   .then(response => {
     const data = response.data.response.results;
