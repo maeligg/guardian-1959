@@ -1,0 +1,30 @@
+{
+  "name": "guardian1959",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cp src/index.html dist/index.html && webpack",
+    "start": "npm run build && webpack-dev-server --open"
+  },
+  "author": "maelbrunet@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.17.1",
+    "css-loader": "^0.28.9",
+    "eslint": "^4.16.0",
+    "file-loader": "^1.1.6",
+    "node-sass": "^4.7.2",
+    "require-context": "^1.0.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.38",
+    "@babel/preset-env": "^7.0.0-beta.38",
+    "babel-loader": "^8.0.0-beta.0"
+  }
+}
