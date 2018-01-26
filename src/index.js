@@ -54,7 +54,7 @@ axios
         article.webUrl
       } target=_blank><h2 class="article-title">${
         article.webTitle
-      }</h2><a>${content}`;
+      }</h2><a>${content.substring(0, 1000)}`;
       grid.appendChild(gridItem);
     });
 
