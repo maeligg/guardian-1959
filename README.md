@@ -1,4 +1,4 @@
-#The Guardian 1959
+# The Guardian 1959
 
 Read today's news from The Guardian, in its original(ish) layout from 1959. For reference : https://www.theguardian.com/gnm-archive/2005/aug/19/1
 
