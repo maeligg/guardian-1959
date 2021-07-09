@@ -17,13 +17,6 @@ h3 {
 
 a[href] {
   color: #000;
-  text-decoration: dashed underline;
-  text-underline-position: under;
-
-  &:focus,
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 .no-grid {
@@ -70,7 +63,7 @@ a[href] {
   border-bottom: 1px solid #000;
   font-size: 1.5rem;
 
-  .pub {
+  .image {
     height: 100%;
 
     img {

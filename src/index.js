@@ -27,8 +27,7 @@ const formattedToday = today.toLocaleString("en-GB", {
 date.innerHTML = formattedToday;
 
 // Pick random ads for the header
-const adSlots = document.querySelectorAll(".js-ad-slot");
-let firstAdNum;
+const adSlots = document.querySelectorAll(".js-image-slot");
 
 adSlots.forEach(slot => {
   const ad = new Image();
