@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack && cp src/index.html dist/index.html",
-    "start": "npm run build && webpack-dev-server --open",
-    "deploy": "node ./create-env.js && npm run build"
+    "build": "webpack --config webpack.prod.js && cp src/index.html dist/index.html",
+    "start": "webpack --config webpack.dev.js && cp src/index.html dist/index.html && webpack-dev-server --config webpack.dev.js --open"
   },
   "author": "maelbrunet@gmail.com",
   "license": "ISC",
@@ -27,6 +26,6 @@
     "@babel/core": "^7.0.0-beta.38",
     "@babel/preset-env": "^7.0.0-beta.38",
     "babel-loader": "^8.0.0-beta.0",
-    "dotenv-webpack": "^1.5.4"
+    "dotenv-webpack": "^1.8.0"
   }
 }
