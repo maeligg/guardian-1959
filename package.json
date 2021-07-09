@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack && cp src/index.html dist/index.html",
-    "start": "npm run build && webpack-dev-server --open",
-    "deploy": "node ./create-env.js && npm run build"
+    "start": "npm run build && webpack-dev-server --open"
   },
   "author": "maelbrunet@gmail.com",
   "license": "ISC",
